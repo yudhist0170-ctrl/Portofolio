@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 2200" preserveAspectRatio="none">
+  <defs>
+    <path id="relief-contour" d="M0-1010C139-987 244-872 365-798c155 95 326-13 448 120s17 296 150 470 25 340-99 480-64 311-234 440-401 195-587 116-170-260-378-353-89-279-221-453-44-328 79-474S-170-1028 0-1010Z" fill="none" stroke="#a8b789" stroke-width="2" stroke-linecap="round"/>
+  </defs>
+
+  <!-- One continuous relief form, shown with nested elevation contours. -->
+  <g transform="translate(720 1100) rotate(-7)" opacity=".24">
+    <use href="#relief-contour" transform="scale(1)" stroke="#d98156" stroke-width="3"/>
+    <use href="#relief-contour" transform="scale(.92)"/>
+    <use href="#relief-contour" transform="scale(.84)"/>
+    <use href="#relief-contour" transform="scale(.76)"/>
+    <use href="#relief-contour" transform="scale(.68)" stroke="#d98156" stroke-width="3"/>
+    <use href="#relief-contour" transform="scale(.60)"/>
+    <use href="#relief-contour" transform="scale(.52)"/>
+    <use href="#relief-contour" transform="scale(.44)"/>
+    <use href="#relief-contour" transform="scale(.36)" stroke="#d98156" stroke-width="3"/>
+    <use href="#relief-contour" transform="scale(.28)"/>
+    <use href="#relief-contour" transform="scale(.20)"/>
+    <use href="#relief-contour" transform="scale(.12)"/>
+  </g>
+</svg>

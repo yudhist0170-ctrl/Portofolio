@@ -1,3 +1,4 @@
+export const instant = false;
 import Image from "next/image";
 import { SiteNav } from "@/app/components/site-nav";
 import { getPortfolioSkills } from "@/data/api";

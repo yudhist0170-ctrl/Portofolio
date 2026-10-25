@@ -1,10 +1,13 @@
 import Image from "next/image";
 import { SiteNav } from "@/app/components/site-nav";
-import { skills } from "@/data/skills";
+import { getPortfolioSkills } from "@/data/api";
 
 const interests = ["GIS & CARTOGRAPHY", "SPATIAL DATA", "WEB DEVELOPMENT"];
 
-export default function Home() {
+
+export default async function Home() {
+  const { skills, usingFallback } = await getPortfolioSkills();
+
   return (
     <main className="site-shell">
       <SiteNav active="home" />
@@ -96,6 +99,13 @@ export default function Home() {
 
       <section className="skills-section">
         <div className="section-heading"><div><span className="section-kicker">02 / TOOLKIT</span><h2>Tools of the <em>trade.</em></h2></div><span className="section-note">SKILLS I&apos;M BUILDING WITH</span></div>
+
+        {usingFallback && (
+  <p role="status">
+    API tidak tersedia; menampilkan skill lokal.
+  </p>
+)}
+
         <div className="skill-grid">{skills.map((skill, index) => <div className="skill-tile" key={skill}><span className="skill-index">{String(index + 1).padStart(2, "0")}</span><span>{skill}</span><b>✳</b></div>)}</div>
       </section>
 

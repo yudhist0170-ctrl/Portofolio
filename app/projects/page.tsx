@@ -1,3 +1,4 @@
+export const instant = false;
 import { SiteNav } from "@/app/components/site-nav";
 import { getPortfolioProjects } from "@/data/api";
 
